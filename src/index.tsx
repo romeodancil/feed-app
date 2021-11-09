@@ -1,12 +1,29 @@
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './index.css'
+import Header from "./common/header";
+import Footer from "./common/footer";
+import List from "./pages/list"
+
+const Routing = () => {
+  return(
+    <Router>
+      <Routes>
+        <Route path="/" element={<App/>} />
+        <Route path="/list" element={<List/>} />
+      </Routes>
+    </Router>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    <Routing />
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
