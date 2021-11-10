@@ -12,8 +12,7 @@ const Routing = () => {
   return(
     <Router>
       <Routes>
-        <Route path="/" element={<App/>} />
-        <Route path="/list" element={<List/>} />
+        <Route path="/" element={<List/>} />
       </Routes>
     </Router>
   )

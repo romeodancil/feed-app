@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
 import './App.css';
-import { data } from './actions/request'
 import Grid from '@mui/material/Grid'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Container'

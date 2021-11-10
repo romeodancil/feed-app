@@ -1,3 +1,4 @@
-# Demo Link
+# Installation
 
-https://feed-app-project.vercel.app/
+## npm install
+## npm start
