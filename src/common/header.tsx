@@ -17,16 +17,18 @@ const Triangle = styled('div')((props) => ({
 
 function Header() {
 	return (
-		<Box sx={{ flexGrow: 0 }}>
-	      	<AppBar position="static">
-		        <Toolbar variant="dense">
-		          <Typography variant="h6" color="inherit" component="div">
-		            ADRENALIN
-		          </Typography>
-		          <Triangle/>
-		        </Toolbar>
-      		</AppBar>
-    	</Box>
+		<Container>
+			<Box sx={{ flexGrow: 0}}>
+		      	<AppBar position="fixed">
+		      		<Toolbar>	
+						<Typography variant="h6" color="inherit" component="div">
+							ADRENALIN
+						</Typography>
+						<Triangle/>
+					</Toolbar>
+	      		</AppBar>
+	    	</Box>
+    	</Container>
 	)
 }
 

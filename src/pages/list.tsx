@@ -8,7 +8,7 @@ function List() {
 	const renderList = () => {
 		return data.map((list: any) => {
 			return (
-				<Grid item xs={4}>
+				<Grid item xs={6} sm={4}>
 					<CardComponent title={list.title} title_long={list.title_long} img='kilimanjaro'/>
 				</Grid>
 			)
@@ -16,10 +16,12 @@ function List() {
 	}
 
 	return (
-		<Container >
-			<Grid container spacing={2}>
-				{renderList()}
-			</Grid>
+		<Container>
+			<Box sx={{marginTop: '80px'}}>
+				<Grid container spacing={2}>
+					{renderList()}
+				</Grid>
+			</Box>
 		</Container>
 	)
 }
